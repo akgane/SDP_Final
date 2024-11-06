@@ -1,5 +1,7 @@
 package Singleton;
 
+import Composite.ProjectComponent;
+import Composite.TaskComponent;
 import Factory.Task;
 import Command.Command;
 
@@ -38,5 +40,12 @@ public class ProjectManager {
             System.out.println("Nothing to undo");
         }
 
+    }
+
+    public void displayTasks(){
+        for(Task task : taskList){
+            ProjectComponent taskComponent = new TaskComponent(task);
+            taskComponent.display();
+        }
     }
 }
