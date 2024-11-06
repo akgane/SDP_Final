@@ -1,4 +1,4 @@
-package Factory;
+package Model.Factory;
 
 public class FeatureTask extends Task {
     public FeatureTask(String title) {

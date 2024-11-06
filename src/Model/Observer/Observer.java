@@ -1,6 +1,6 @@
-package Observer;
+package Model.Observer;
 
-import Factory.Task;
+import Model.Factory.Task;
 
 public interface Observer {
     void update(Task task);

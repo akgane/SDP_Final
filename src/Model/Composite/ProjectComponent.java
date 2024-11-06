@@ -1,4 +1,4 @@
-package Composite;
+package Model.Composite;
 
 public interface ProjectComponent {
     void display();

@@ -1,6 +1,6 @@
-package Observer;
+package Model.Observer;
 
-import Factory.Task;
+import Model.Factory.Task;
 
 public class TeamMember implements Observer{
     private String name;

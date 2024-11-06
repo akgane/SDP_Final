@@ -1,9 +1,9 @@
-package Facade;
+package Controller.Facade;
 
-import Command.*;
-import Factory.*;
-import Observer.Observer;
-import Singleton.*;
+import Model.Command.*;
+import Model.Factory.*;
+import Model.Observer.Observer;
+import Model.Singleton.*;
 
 public class TaskManagerFacade {
     private ProjectManager projectManager;
@@ -34,12 +34,12 @@ public class TaskManagerFacade {
 
     public void addObserverToTask(Task task, Observer observer){
         task.addObserver(observer);
-        System.out.println("Observer added to task \"" + task.getTitle() + "\".");
+        System.out.println("Model.Observer added to task \"" + task.getTitle() + "\".");
     }
 
     public void removeObserverFromTask(Task task, Observer observer){
         task.removeObserver(observer);
-        System.out.println("Observer removed from task \"" + task.getTitle() + "\".");
+        System.out.println("Model.Observer removed from task \"" + task.getTitle() + "\".");
     }
 
     public void undoLastAction(){

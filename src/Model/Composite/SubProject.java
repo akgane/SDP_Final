@@ -1,4 +1,4 @@
-package Composite;
+package Model.Composite;
 
 import java.util.ArrayList;
 import java.util.List;

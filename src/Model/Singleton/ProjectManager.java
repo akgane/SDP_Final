@@ -1,9 +1,9 @@
-package Singleton;
+package Model.Singleton;
 
-import Composite.ProjectComponent;
-import Composite.TaskComponent;
-import Factory.Task;
-import Command.Command;
+import Model.Composite.ProjectComponent;
+import Model.Composite.TaskComponent;
+import Model.Factory.Task;
+import Model.Command.Command;
 
 import java.util.*;
 

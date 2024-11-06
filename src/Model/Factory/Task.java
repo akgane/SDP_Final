@@ -1,6 +1,6 @@
-package Factory;
+package Model.Factory;
 
-import Observer.Observer;
+import Model.Observer.Observer;
 
 import java.util.*;
 

@@ -1,4 +1,4 @@
-package Factory;
+package Model.Factory;
 
 public class TaskFactory {
     public static Task createTask(String type, String title){

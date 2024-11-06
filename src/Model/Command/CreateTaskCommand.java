@@ -1,7 +1,7 @@
-package Command;
+package Model.Command;
 
-import Factory.Task;
-import Singleton.ProjectManager;
+import Model.Factory.Task;
+import Model.Singleton.ProjectManager;
 
 public class CreateTaskCommand implements Command {
     private ProjectManager projectManager;

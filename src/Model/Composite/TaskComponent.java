@@ -1,6 +1,6 @@
-package Composite;
+package Model.Composite;
 
-import Factory.Task;
+import Model.Factory.Task;
 
 public class TaskComponent implements ProjectComponent {
     private final Task task;

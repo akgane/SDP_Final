@@ -1,4 +1,4 @@
-package Factory;
+package Model.Factory;
 
 public class BugTask extends Task {
     public BugTask(String title) {

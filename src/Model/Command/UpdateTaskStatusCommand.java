@@ -1,6 +1,6 @@
-package Command;
+package Model.Command;
 
-import Factory.Task;
+import Model.Factory.Task;
 
 public class UpdateTaskStatusCommand implements Command{
     private Task task;
