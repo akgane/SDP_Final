@@ -1,8 +1,12 @@
 package Factory;
 
-public class BugTask implements Task{
+public class BugTask extends Task {
+    public BugTask(String title) {
+        super(title);
+    }
+
     @Override
     public void execute() {
-        System.out.println("Bug task is executed.");
+        System.out.println("Bug task is executed: " + getTitle());
     }
 }

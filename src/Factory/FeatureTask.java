@@ -1,8 +1,12 @@
 package Factory;
 
-public class FeatureTask implements Task{
+public class FeatureTask extends Task {
+    public FeatureTask(String title) {
+        super(title);
+    }
+
     @Override
     public void execute() {
-        System.out.println("Feature task is executed.");
+        System.out.println("Feature task is executed: " + getTitle());
     }
 }
