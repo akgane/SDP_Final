@@ -48,4 +48,11 @@ public class ProjectManager {
             taskComponent.display();
         }
     }
+
+    public Task getTaskByTitle(String title){
+        for(Task task : taskList){
+            if(task.getTitle().equals(title)) return task;
+        }
+        return null;
+    }
 }
