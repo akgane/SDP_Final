@@ -50,6 +50,10 @@ public class TaskManagerFacade {
         projectManager.displayTasks();
     }
 
+    public Task getTaskByTitle(String title){
+        return projectManager.getTaskByTitle(title);
+    }
+
     private void execute(Command command){
         projectManager.executeCommand(command);
     }
