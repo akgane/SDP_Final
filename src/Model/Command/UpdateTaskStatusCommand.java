@@ -2,6 +2,7 @@ package Model.Command;
 
 import Model.Factory.Task;
 
+//A specific command to update the status of a task.
 public class UpdateTaskStatusCommand implements Command{
     private Task task;
     private String newStatus;

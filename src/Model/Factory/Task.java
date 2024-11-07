@@ -4,6 +4,10 @@ import Model.Observer.Observer;
 
 import java.util.*;
 
+/**
+ * Represents a task. This is an abstract class
+ * that allows you to implement different types of tasks.
+ */
 public abstract class Task {
     private String title;
     private String status;

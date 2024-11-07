@@ -2,6 +2,10 @@ package View.UI;
 
 import Controller.Facade.TaskManagerFacade;
 
+/**
+ * A view for creating new tasks via console input.
+ * Requests data from the user and calls TaskManagerFacade to create the task.
+ */
 public class TaskCreationView {
     private TaskManagerFacade taskManagerFacade;
     private ConsoleView consoleView;

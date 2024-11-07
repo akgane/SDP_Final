@@ -4,6 +4,11 @@ import Controller.Facade.TaskManagerFacade;
 
 import java.util.Scanner;
 
+/**
+ * A console view that displays task data to the user.
+ * Displays a list of tasks, error and
+ * success messages, and prompts the user for input.
+ */
 public class ConsoleView {
     private TaskManagerFacade taskManagerFacade;
 

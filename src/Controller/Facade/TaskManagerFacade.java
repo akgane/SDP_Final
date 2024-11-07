@@ -5,6 +5,12 @@ import Model.Factory.*;
 import Model.Observer.Observer;
 import Model.Singleton.*;
 
+/**
+ * The main facade of the application,
+ * providing a simplified interface for working with tasks.
+ * Creates tasks, updates their status, manages observers,
+ * and executes commands
+ */
 public class TaskManagerFacade {
     private ProjectManager projectManager;
 
@@ -12,12 +18,12 @@ public class TaskManagerFacade {
         this.projectManager = ProjectManager.getInstance();
     }
 
-    public void createTask(String type, String title){
-        try{
+    public void createTask(String type, String title) {
+        try {
             Task task = TaskFactory.createTask(type, title);
             Command createTaskCommand = new CreateTaskCommand(projectManager, task);
             execute(createTaskCommand);
-        }catch (IllegalArgumentException e){
+        } catch (IllegalArgumentException e) {
             System.out.println(e.getMessage());
         }
     }

@@ -7,6 +7,12 @@ import Model.Command.Command;
 
 import java.util.*;
 
+/**
+ * A task manager that manages a list of
+ * tasks and provides methods for processing them.
+ * Adds, deletes and performs actions on tasks,
+ * stores all created tasks
+ */
 public class ProjectManager {
     private static ProjectManager instance;
     private List<Task> taskList = new ArrayList<>();

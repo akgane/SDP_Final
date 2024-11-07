@@ -3,6 +3,7 @@ package Model.Command;
 import Model.Factory.Task;
 import Model.Singleton.ProjectManager;
 
+//A concrete command to create a task. Uses TaskFactory to create new tasks.
 public class CreateTaskCommand implements Command {
     private ProjectManager projectManager;
     private Task task;

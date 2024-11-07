@@ -3,6 +3,11 @@ package View.UI;
 import Controller.Facade.TaskManagerFacade;
 import Model.Factory.Task;
 
+/**
+ * Requests data from the user and calls TaskManagerFacade to create the task.
+ * Requests the task name and new status,
+ * then updates the status via TaskManagerFacade.
+ */
 public class TaskStatusUpdateView {
     private TaskManagerFacade taskManagerFacade;
     private ConsoleView consoleView;
